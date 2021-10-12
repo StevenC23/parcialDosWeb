@@ -7,7 +7,7 @@ import MenuFooter from './components/MenuFooter';
 import UseMediaQuery from './components/UseMediaQuery';
 
 function App() {
-  const isDesktop = UseMediaQuery('(min-width: 425px)');
+  const isDesktop = UseMediaQuery('(min-width: 650px)');
 
   return (
     <div>
