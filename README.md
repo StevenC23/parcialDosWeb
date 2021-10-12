@@ -16,7 +16,7 @@ Menu horizontal compuesto por 3 cajas.
 
 - Componente EstiloPinterest: 
 
-Contenedor tipo grilla con las fotos.
+Contenedor tipo grilla con las fotos, se utiliza el componente Pin para mostrar cada foto.
 
 
 ## Vista Mobile:
@@ -27,7 +27,7 @@ Menu con scroll horizontal.
 
 - Componente EstiloPinterest: 
 
-Contenedor tipo grilla con las fotos.
+Contenedor tipo grilla con las fotos, se utiliza el componente Pin para mostrar cada foto.
 
 - Componente MenuFooter:
 
