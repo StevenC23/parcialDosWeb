@@ -1,30 +1,30 @@
 import React from 'react';
 import logoPinterest from '../utils/logopinterest.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch,faBell,faCommentDots,faUserCircle,faChevronDown} from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBell, faCommentDots, faUserCircle, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
-        <div style = {styles.headerLarge}>
-            <div style = {styles.firstIcons}>
+        <div style={styles.headerLarge}>
+            <div style={styles.firstIcons}>
                 <img src={logoPinterest} alt="logoP" style={styles.logoP} />
-                <div style = {styles.inicio} >
+                <div style={styles.inicio} >
                     <span><strong>Inicio</strong></span>
                 </div>
-                <div style = {styles.hoy} >
+                <div style={styles.hoy} >
                     <span><strong>Hoy</strong></span>
                 </div>
             </div>
-            <div style = {styles.search}>
-                <FontAwesomeIcon icon={faSearch} style={styles.icon}/>
+            <div style={styles.search}>
+                <FontAwesomeIcon icon={faSearch} style={styles.icon} />
                 <span style={styles.buscar}>Buscar</span>
             </div>
-            <div style = {styles.secondIcons}>
-                <FontAwesomeIcon icon={faBell} style={styles.icon2}/>
-                <FontAwesomeIcon icon={faCommentDots} style={styles.icon2}/>
-                <FontAwesomeIcon icon={faUserCircle} style={styles.icon2}/>
-                <FontAwesomeIcon icon={faChevronDown} style={styles.icon2}/>
-                
+            <div style={styles.secondIcons}>
+                <FontAwesomeIcon icon={faBell} style={styles.icon2} />
+                <FontAwesomeIcon icon={faCommentDots} style={styles.icon2} />
+                <FontAwesomeIcon icon={faUserCircle} style={styles.icon2} />
+                <FontAwesomeIcon icon={faChevronDown} style={styles.icon2} />
+
             </div>
         </div>
     );
@@ -41,7 +41,7 @@ const styles = {
 
     /////////////////////////////////////////
 
-    firstIcons:{
+    firstIcons: {
         width: '300px',
         // backgroundColor: 'yellow',
         margin: '2px',
@@ -51,13 +51,13 @@ const styles = {
         alignItems: 'center',
     },
 
-    logoP:{
+    logoP: {
         cursor: 'pointer',
         width: '30px',
         height: '30px',
     },
 
-    inicio:{
+    inicio: {
         cursor: 'pointer',
         width: '70px',
         height: '50px',
@@ -69,7 +69,7 @@ const styles = {
         alignItems: 'center',
     },
 
-    hoy:{
+    hoy: {
         cursor: 'pointer',
         width: '70px',
         height: '50px',
@@ -80,7 +80,7 @@ const styles = {
     },
 
     /////////////////////////////////////////
-    search:{
+    search: {
         cursor: 'text',
         width: '100vw',
         backgroundColor: 'rgba(0, 0, 0, 0.05)',
@@ -92,20 +92,20 @@ const styles = {
         alignItems: 'center',
         paddingLeft: '20px',
     },
-    icon:{
-        color:'rgba(0, 0, 0, 0.5)',
+    icon: {
+        color: 'rgba(0, 0, 0, 0.5)',
         fontSize: '20px',
         // background-color: ;
     },
 
-    buscar:{
-        color:'rgba(0, 0, 0, 0.5)',
+    buscar: {
+        color: 'rgba(0, 0, 0, 0.5)',
         fontSize: '20px',
         marginLeft: '5px',
     },
 
     ////////////////////////////////////////
-    secondIcons:{
+    secondIcons: {
         width: '300px',
         // backgroundColor: 'yellow',
         margin: '2px',
@@ -114,9 +114,9 @@ const styles = {
         justifyContent: 'space-around',
         alignItems: 'center',
     },
-    icon2:{
+    icon2: {
         cursor: 'pointer',
-        color:'rgba(0, 0, 0, 0.5)',
+        color: 'rgba(0, 0, 0, 0.5)',
         fontSize: '30px',
         // background-color: ;
     },
