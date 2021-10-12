@@ -36,7 +36,8 @@ const styles = {
         marginTop: '10%'
     },
     container: {
-        background: '#FFFFFF',
+        // margin: 'auto',
+        background: 'white',
         width: '300px',
         height: '75px',
         padding: '0',
@@ -48,7 +49,13 @@ const styles = {
         justifyContent: 'space-around',
         alignItems: 'center',
         boxSizing: 'border-box',
-        overflow: 'hidden'
+        overflow: 'hidden',
+
+        position: 'fixed',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        bottom: '20px',
+        zIndex: '999',
     },
     tabBar: {
         position: 'relative',

@@ -32,10 +32,11 @@ const Header = () => {
 
 const styles = {
     headerLarge: {
+        // display: 'none',
         width: '100vw',
         height: '80px',
         // backgroundColor: 'red',
-        display: 'flex',
+        display: 'none',
         flexDirection: 'row',
     },
 

@@ -10,9 +10,9 @@ const HeaderSmall = () => {
 
 const styles = {
     headerSmall: {
-        display: 'none',
+        display: 'flex',
         width: '100vw',
-        height: '50px',
+        height: '80px',
         backgroundColor: 'blue',
     }
 }
