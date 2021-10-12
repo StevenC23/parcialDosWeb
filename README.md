@@ -8,24 +8,24 @@
 
 Para la maquetación de la página se utilizó una estructura de 4 componentes que se dividen de la siguiente manera:
 
-Vista de escritorio:
+###### Vista de escritorio:
 
 - Componente HeaderLarge:
 
 Menu horizontal compuesto por 3 cajas.
 
-- Componente EstiloPinterest:
+- Componente EstiloPinterest: 
 
 Contenedor tipo grilla con las fotos.
 
 
-Vista Mobile:
+###### Vista Mobile:
 
-- Componente HeaderSmall:
+- Componente HeaderSmall: 
 
 Menu con scroll horizontal.
 
-- Componente EstiloPinterest:
+- Componente EstiloPinterest: 
 
 Contenedor tipo grilla con las fotos.
 
