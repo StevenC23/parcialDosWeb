@@ -3,9 +3,9 @@ import logoPinterest from '../utils/logopinterest.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBell, faCommentDots, faUserCircle, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
+const Header = ({ isDesktop }) => {
     return (
-        <div style={styles.headerLarge}>
+        <div style={{ ...styles.headerLarge, display: isDesktop ? 'flex' : 'none' }}>
             <div style={styles.firstIcons}>
                 <img src={logoPinterest} alt="logoP" style={styles.logoP} />
                 <div style={styles.inicio} >

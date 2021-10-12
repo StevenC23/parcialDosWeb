@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <HeaderLarge />
+      <HeaderLarge isDesktop={isDesktop} />
       <HeaderSmall isDesktop={isDesktop} />
       <MenuFooter isDesktop={isDesktop} />
       <EstiloPinterest />
