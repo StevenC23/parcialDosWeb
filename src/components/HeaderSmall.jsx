@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HeaderSmall = () => {
+const HeaderSmall = ({ isDesktop }) => {
     return (
-        <div style = {styles.headerSmall}>
-            
+        <div style={{ ...styles.headerSmall, display: isDesktop ? 'none' : 'flex' }}>
+
         </div>
     );
 };

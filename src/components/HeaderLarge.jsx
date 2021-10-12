@@ -36,7 +36,7 @@ const styles = {
         width: '100vw',
         height: '80px',
         // backgroundColor: 'red',
-        display: 'none',
+        display: 'flex',
         flexDirection: 'row',
     },
 

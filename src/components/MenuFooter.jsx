@@ -1,8 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch, faCommentDots, faUser } from '@fortawesome/free-solid-svg-icons';
 
-const MenuFooter = () => {
+const MenuFooter = ({ isDesktop }) => {
+    const styles = {
+        icon: {
+            color: 'rgba(0, 0, 0, 0.5)',
+            fontSize: '25px',
+            margin: '0 auto',
+            marginTop: '10%'
+        },
+        container: {
+            // margin: 'auto',
+            background: 'white',
+            width: '300px',
+            height: '75px',
+            padding: '0',
+            position: 'relative',
+            borderRadius: '75px',
+            border: 'solid thin #E7ECEA',
+            boxShadow: '0 10px 30px rgba(#414856, 0.05)',
+            display: 'flex',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+            boxSizing: 'border-box',
+            overflow: 'hidden',
+
+            position: 'fixed',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            bottom: '20px',
+            zIndex: '999',
+        },
+        tabBar: {
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'row',
+            margin: '0 auto',
+            width: '90%',
+            height: '100px',
+            marginTop: '20%'
+        },
+        tab: {
+            textAlign: 'center',
+            position: 'relative',
+            cursor: 'pointer',
+            height: '100%',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'space-around'
+        }
+    };
+
     const menu = {
         tabs: [
             { text: 'Home', icon: faHome, key: 0 },
@@ -14,7 +63,7 @@ const MenuFooter = () => {
     }
 
     return (
-        <div style={styles.container}>
+        <div style={{ ...styles.container, display: isDesktop ? 'none' : 'flex' }}>
             <div style={styles.tabBar}>
                 {
                     menu.tabs.map(tab =>
@@ -28,52 +77,4 @@ const MenuFooter = () => {
     );
 };
 
-const styles = {
-    icon: {
-        color: 'rgba(0, 0, 0, 0.5)',
-        fontSize: '25px',
-        margin: '0 auto',
-        marginTop: '10%'
-    },
-    container: {
-        // margin: 'auto',
-        background: 'white',
-        width: '300px',
-        height: '75px',
-        padding: '0',
-        position: 'relative',
-        borderRadius: '75px',
-        border: 'solid thin #E7ECEA',
-        boxShadow: '0 10px 30px rgba(#414856, 0.05)',
-        display: 'flex',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        boxSizing: 'border-box',
-        overflow: 'hidden',
-
-        position: 'fixed',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        bottom: '20px',
-        zIndex: '999',
-    },
-    tabBar: {
-        position: 'relative',
-        display: 'flex',
-        flexDirection: 'row',
-        margin: '0 auto',
-        width: '90%',
-        height: '100px',
-        marginTop: '20%'
-    },
-    tab: {
-        textAlign: 'center',
-        position: 'relative',
-        cursor: 'pointer',
-        height: '100%',
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'space-around'
-    }
-}
 export default MenuFooter;
